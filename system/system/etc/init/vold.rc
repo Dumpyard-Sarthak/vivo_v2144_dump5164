@@ -1,0 +1,15 @@
+service vold /system/bin/vold \
+        --blkid_context=u:r:blkid:s0 --blkid_untrusted_context=u:r:blkid_untrusted:s0 \
+        --fsck_context=u:r:fsck:s0 --fsck_untrusted_context=u:r:fsck_untrusted:s0
+    class core
+    ioprio be 2
+    task_profiles ProcessCapacityHigh
+    shutdown critical
+    group root reserved_disk
+    reboot_on_failure reboot,vold-failed
+
+# process cryptfs exception
+on property:sys.user.0.ce_available=true
+    exec - root -- /system/bin/vdc --wait cryptfs exceptionProcess sync check
+    setprop ro.vendor.vivo.fbe_reason ${vold.cryptfs.exception}
+    exec_background - root -- /system/bin/vdc --wait cryptfs exceptionProcess async

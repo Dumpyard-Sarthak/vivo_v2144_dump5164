@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<config version="1.0">
+  <mapping name="carrier">
+    <!-- PL plus Aero2 -->
+    <siminfo>
+      <property name="rule">0x1</property>
+      <property name="mcc_mnc">26004</property>
+      <property name="map_key">26004V01</property>
+    </siminfo>
+    <!-- PL plus Netia-->
+    <siminfo>
+      <property name="rule">0x1</property>
+      <property name="mcc_mnc">26007</property>
+      <property name="map_key">26007V01</property>
+    </siminfo>
+    <!-- PL plus Cyfrowy Polsat -->
+    <siminfo>
+      <property name="rule">0x1</property>
+      <property name="mcc_mnc">26012</property>
+      <property name="map_key">26012V01</property>
+    </siminfo>
+    <!-- PL plus A2mobile -->
+    <siminfo>
+      <property name="rule">0x1</property>
+      <property name="mcc_mnc">26015</property>
+      <property name="map_key">26015V01</property>
+    </siminfo>
+    <!-- PL plus -->
+    <siminfo>
+      <property name="rule">0x1</property>
+      <property name="mcc_mnc">26001</property>
+      <property name="map_key">26001V01</property>
+    </siminfo>
+  </mapping>
+</config>
