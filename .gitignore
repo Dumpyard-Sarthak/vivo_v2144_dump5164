@@ -1,0 +1,9 @@
+system/system/system_ext/apex/com.android.vndk.v30.apex
+system/system/app/VivoFacemojiIME/VivoFacemojiIME.apk
+system/system/app/VivoCamera/VivoCamera.apk
+system/system/framework/vivo-res.apk
+vendor/lib64/mt6983/libcameracustom.camera.isp.so
+vendor/etc/recovery.img
+product/app/WebViewGoogle/WebViewGoogle.apk
+product/priv-app/Velvet/Velvet.apk
+product/priv-app/GmsCore/GmsCore.apk
